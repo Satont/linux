@@ -12,4 +12,4 @@
 
 # To-do
 
-- Do bash script for auto-installation
+- bash script for auto-installation
