@@ -1,0 +1,10 @@
+[satont.ru]
+command=~/.config/i3blocks/server-monitor/satont.ru
+interval=60
+markup=pango
+
+
+[twitchbot.ga]
+command=~/.config/i3blocks/server-monitor/twitchbot.ga
+interval=60
+markup=pango
