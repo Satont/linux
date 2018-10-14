@@ -14,3 +14,4 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme sunaku
 
 antigen apply
+alias c="git cherry-pick"
