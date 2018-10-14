@@ -32,7 +32,7 @@ color=#f3a683
 
 
 [gmail]
-command=~/.config/i3blocks/gmail; [[ -z "${BLOCK_BUTTON}" ]] || chromium-browser https://gmail.com
+command=~/.config/i3blocks/gmail; [[ -z "${BLOCK_BUTTON}" ]] || chromium https://gmail.com
 interval=60
 label=
 color=#e84118
