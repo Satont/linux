@@ -1,0 +1,3 @@
+# Dependencies
+
+- `mpstat xkblayout-state`
