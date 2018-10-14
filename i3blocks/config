@@ -26,8 +26,7 @@ signal=10
 color=#ffa502
 
 [weather]
-command=ansiweather
-label=
+command=~/.config/i3blocks/weather
 interval=60
 color=#f3a683
 
