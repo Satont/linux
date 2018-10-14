@@ -9,3 +9,7 @@
 - `move i3-scrot.conf in user home directory`
 - `move .zshrc in user home directory`
 - `rename i3config to config, and place it in ~/.i3 folder`
+
+# To-do
+
+- Do bash script for auto-installation
