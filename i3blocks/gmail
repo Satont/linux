@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Config file needs the following settings:
+MAIL_USER=""
+MAIL_PASSWORD="" #you need get app password at https://www.google.com/settings/security/lesssecureapps 
+
+COUNT=`curl -su $MAIL_USER:$MAIL_PASSWORD https://mail.google.com/mail/feed/atom || echo "<fullcount>unknown number of</fullcount>"`
+COUNT=`echo "$COUNT" | grep -oPm1 "(?<=<fullcount>)[^<]+" `
+if [ "$COUNT" = "0" ]; then
+	echo ""
+else
+	echo $COUNT
+fi

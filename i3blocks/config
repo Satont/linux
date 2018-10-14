@@ -32,6 +32,13 @@ interval=60
 color=#f3a683
 
 
+[gmail]
+command=~/.config/i3blocks/gmail; [[ -z "${BLOCK_BUTTON}" ]] || chromium-browser https://gmail.com
+interval=60
+label=
+color=#e84118
+
+
 [time]
 command=echo "$(date +"%H:%M")"; [[ -z "${BLOCK_BUTTON}" ]] || zenity --calendar
 interval=60
