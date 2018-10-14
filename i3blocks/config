@@ -13,7 +13,7 @@ color=#adff00
 
 [disk]
 label=
-command=printf "`df -h  --output=used /dev/sda5 | grep -E -o '[0-9].[0-9]?G'`/`df -h  --output=avail /dev/sda5 | grep -E -o '[0-9].[0-9]?G'`\n"
+command=printf "`df -h  --output=used /dev/sda5 | grep -E -o '[0-9].[0-9]?G'`/`df -h  --output=size /dev/sda5 | grep -E -o '[0-9].[0-9]?G'`\n"
 interval=60
 color=#63cdda
 
