@@ -19,7 +19,7 @@ color=#63cdda
 
 
 [volume]
-command=echo "$(~/.config/i3blocks/volume/volume)"; [[ -z "${BLOCK_BUTTON}" ]] || pavucontrol
+command=~/.config/i3blocks/volume/volume
 label=♪
 interval=once
 signal=10
@@ -27,7 +27,7 @@ color=#ffa502
 
 [weather]
 command=~/.config/i3blocks/weather
-interval=60
+interval=1600
 color=#f3a683
 
 
