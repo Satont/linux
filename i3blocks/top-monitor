@@ -1,10 +1,10 @@
 [satont.ru]
-command=~/.config/i3blocks/server-monitor/satont.ru
+command=~/.config/i3blocks/server-monitor/satont.ru; [[ -z "${BLOCK_BUTTON}" ]] || urxvt -e ssh root@satont.ru
 interval=60
 markup=pango
 
 
 [twitchbot.ga]
-command=~/.config/i3blocks/server-monitor/twitchbot.ga
+command=~/.config/i3blocks/server-monitor/twitchbot.ga; [[ -z "${BLOCK_BUTTON}" ]] || urxvt -e ssh root@twitchbot.ga
 interval=60
 markup=pango
