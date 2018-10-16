@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Requires https://www.google.com/settings/security/lesssecureapps for gmail.
+
 # Config file needs the following settings:
 MAIL_USER=""
-MAIL_PASSWORD="" #you need get app password at https://www.google.com/settings/security/lesssecureapps 
+MAIL_PASSWORD=""
+
 
 COUNT=`curl -su $MAIL_USER:$MAIL_PASSWORD https://mail.google.com/mail/feed/atom || echo "<fullcount>unknown number of</fullcount>"`
 COUNT=`echo "$COUNT" | grep -oPm1 "(?<=<fullcount>)[^<]+" `

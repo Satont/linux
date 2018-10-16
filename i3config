@@ -56,7 +56,7 @@ exec --no-startup-id pulseaudio
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec chromiump
+bindsym $mod+F2 exec chromium
 bindsym $mod+Shift+F2 exec chromium --profile-directory="prime" -incognito
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
