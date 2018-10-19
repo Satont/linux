@@ -15,3 +15,4 @@ antigen theme sunaku
 
 antigen apply
 alias c="git cherry-pick"
+alias ls="ls -lhF --color=auto --group-directories-first"
