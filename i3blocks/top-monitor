@@ -1,3 +1,7 @@
+[title]
+command=xtitle -s
+interval=persist
+
 [satont.ru]
 command=~/.config/i3blocks/server-monitor/satont.ru; [[ -z "${BLOCK_BUTTON}" ]] || urxvt -e ssh root@satont.ru
 interval=60
