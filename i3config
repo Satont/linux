@@ -357,6 +357,7 @@ bar {
 	workspace_buttons no
 	font pango:Monospace 10
 	separator_symbol |
+	tray_output none
 colors {
         background #222D31
         separator  #FFFFFF
