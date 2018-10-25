@@ -2,6 +2,7 @@
 
 - `mpstat xkblayout-state`
 - `oh-my-zsh antigen`
+- `xtitle`
 
 # Installation
 - `move i3blocks to ~/.config folder. Full path must be like ~/.config/i3blocks`
