@@ -1,0 +1,73 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = /home/satont/.config/polybar/master.conf
+include-file = /home/satont/.config/polybar/modules.conf
+
+
+;=====================================================
+;     Openbox Bars
+;=====================================================
+
+[bar/openbox-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = jgmenu workspaces
+modules-center = window_switch clock
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory pkg network volume}
+
+
+;=====================================================
+;     i3 Bars
+;=====================================================
+
+[bar/i3-bar]
+inherit = bar/master
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = HDMI-0
+modules-left   = i3
+modules-center = xwindow
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory filesystem volume clock} 
+
+[bar/i3-bar2]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = DVI-D-0
+
+modules-left   = i3
+
+
+;=====================================================
+;     Bspwm Bars
+;=====================================================
+
+[bar/bspwm-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = bspwm menu
+modules-center = 
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory pkg network volume clock}
+
+;=====================================================
+;     Openbox Bars
+;=====================================================
+
+[bar/generic-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = workspaces menu
+modules-center = clock
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory pkg network volume}
+
