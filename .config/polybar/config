@@ -31,8 +31,9 @@ inherit = bar/master
 ; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
 monitor = HDMI-0
 modules-left   = i3
-modules-center = xwindow
+modules-center = 
 modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory filesystem volume clock} 
+tray-position = right
 
 [bar/i3-bar2]
 inherit = bar/master
@@ -41,7 +42,7 @@ inherit = bar/master
 monitor = DVI-D-0
 
 modules-left   = i3
-
+tray-position = none
 
 ;=====================================================
 ;     Bspwm Bars
